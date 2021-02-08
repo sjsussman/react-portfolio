@@ -1,6 +1,6 @@
-import React from "react"
-import { Link } from "gatsby"
-import styled from "styled-components"
+import React from "react";
+import { Link } from "react-router-dom";
+import styled from "styled-components";
 
 const NavLink = styled(Link)`
   text-decoration: none;
@@ -36,7 +36,7 @@ const NavLink = styled(Link)`
     font-size: 1.5rem;
     z-index: 6;
   }
-`
+`;
 
 const Navlinks = () => {
   return (
@@ -45,7 +45,7 @@ const Navlinks = () => {
       <NavLink to="/projects">Projects</NavLink>
       <NavLink to="/contact">Contact</NavLink>
     </>
-  )
-}
+  );
+};
 
-export default Navlinks
+export default Navlinks;
