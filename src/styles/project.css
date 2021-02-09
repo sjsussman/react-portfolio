@@ -16,10 +16,11 @@
 #devAppLink {
   display: inline-block;
   color: crimson;
+  margin-bottom: 2%;
 }
 
 #cardWrapper {
-  height: 45vh;
+  height: 65vh;
 }
 
 @media (max-width: 800px) {
