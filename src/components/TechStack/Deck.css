@@ -23,9 +23,9 @@
 
 #deckroot3 {
   overscroll-behavior-y: contain;
-  margin: 100px 0 150px;
+  margin: 70px 0 25px;
   padding: 0;
-  height: 400px;
+  height: 430px;
   width: 100%;
   user-select: none;
   overflow: hidden;
