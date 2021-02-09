@@ -1,0 +1,50 @@
+#cardroot1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5%;
+}
+
+.c {
+  position: absolute;
+  max-width: 70%;
+  max-height: 500px;
+  width: 200ch;
+  height: 50vh;
+  cursor: pointer;
+  will-change: transform, opacity;
+  border: 1px solid black;
+}
+
+.front,
+.back {
+  background-size: cover;
+  /* background-position: center; */
+}
+
+.back {
+  background-image: url("../../imgs/Screen\ Shot\ 2021-02-09\ at\ 12.57.50\ PM.png");
+}
+
+.front {
+  background-image: url("../../imgs/New\ Project.png");
+}
+
+@media (max-width: 800px) {
+  .c {
+    width: 59ch;
+    height: 50vh;
+  }
+  .front,
+  .back {
+    background-size: cover;
+    background-position: right;
+  }
+}
+
+@media (max-width: 500px) {
+  .c {
+    width: 40ch;
+    height: 40vh;
+  }
+}

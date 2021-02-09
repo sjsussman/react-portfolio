@@ -1,0 +1,45 @@
+#project-banner h1 {
+  font-size: 4rem;
+  margin-left: 5%;
+}
+
+#project-banner p {
+  font-size: 1.7rem;
+  margin-left: 20%;
+}
+
+#link-container {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+#devAppLink {
+  display: inline-block;
+  color: crimson;
+}
+
+#cardWrapper {
+  height: 45vh;
+}
+
+@media (max-width: 800px) {
+  #project-banner p {
+    margin-right: 20%;
+    text-align: center;
+  }
+
+  #cardWrapper {
+    height: 55vh;
+  }
+}
+
+@media (max-width: 500px) {
+  #project-banner p {
+    margin-right: 20%;
+    text-align: center;
+  }
+
+  #cardWrapper {
+    height: 45vh;
+  }
+}
