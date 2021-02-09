@@ -8,9 +8,9 @@
 .c {
   position: absolute;
   max-width: 70%;
-  max-height: 500px;
+  max-height: 60vh;
   width: 200ch;
-  height: 50vh;
+  height: 60vh;
   cursor: pointer;
   will-change: transform, opacity;
   border: 1px solid black;
@@ -18,7 +18,7 @@
 
 .front,
 .back {
-  background-size: cover;
+  background-size: 100%;
   /* background-position: center; */
 }
 
