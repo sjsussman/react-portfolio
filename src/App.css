@@ -1,3 +1,19 @@
 * {
   font-family: "Mukta", sans-serif;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  overscroll-behavior-y: contain;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0%;
 }
