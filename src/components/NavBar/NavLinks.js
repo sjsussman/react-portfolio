@@ -10,6 +10,7 @@ const NavLink = styled(Link)`
   margin: 0 1vw;
   transition: all 200ms ease-in;
   position: relative;
+  font-weight: 600;
 
   :after {
     position: absolute;
