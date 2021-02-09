@@ -1,0 +1,40 @@
+#deckroot1 {
+  position: absolute;
+  width: 100vw;
+  will-change: transform;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#deckroot2 {
+  color: crimson;
+  background-color: #fff;
+  width: 300px;
+  max-width: 80%;
+  min-height: 60vh;
+  max-height: 470px;
+  will-change: transform;
+  border-radius: 10px;
+  box-shadow: 0 12.5px 20px 10px rgba(50, 50, 73, 0.1),
+    0 10px 10px -10px rgba(50, 50, 73, 0.3);
+  padding: 20px;
+  font-size: 1.4rem;
+}
+
+#deckroot3 {
+  overscroll-behavior-y: contain;
+  margin: 100px 0 150px;
+  padding: 0;
+  height: 400px;
+  width: 100%;
+  user-select: none;
+  overflow: hidden;
+}
+
+#deckroot4 {
+  /* background-color: background; */
+  width: 100%;
+  height: 400px;
+  cursor: inherit;
+}
