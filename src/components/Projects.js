@@ -1,10 +1,12 @@
-import React from 'react'
+import React from "react";
+import Card from "./Project Card/Card.js";
 
 const Projects = () => {
+  return (
+    <div>
+      <Card />
+    </div>
+  );
+};
 
-    return(
-        <h1>Test</h1>
-    )
-}
-
-export default Projects
+export default Projects;
