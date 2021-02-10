@@ -2,11 +2,11 @@ import React from "react";
 import "../styles/home.css";
 import ExportedDeck from "./TechStack/Deck.js";
 import { Link } from "react-router-dom";
-import AbsoluteWrapper from "./AbsoluteWrapper";
+import { motion } from "framer-motion";
 
 const Home = () => {
   return (
-    <AbsoluteWrapper>
+    <motion.div exit={{ opacity: 0 }}>
       <div id="home-container">
         <h1 id="home-header">Hello, my name is Steven</h1>
         <p>
@@ -37,7 +37,7 @@ const Home = () => {
       <div>
         <ExportedDeck />
       </div>
-    </AbsoluteWrapper>
+    </motion.div>
   );
 };
 
