@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useSprings, animated, to as interpolate } from "react-spring";
+import { useSprings, animated, interpolate } from "react-spring";
 import { useDrag } from "react-use-gesture";
 import "./Deck.css";
 
@@ -60,9 +60,9 @@ const stackcards = [
 const Card = ({ stackcard }) => {
   const { title, description, componentCard } = stackcard;
   return (
-    <div style={{ padding: [2, 3] }}>
-      <div style={{ textAlign: "center" }}>{componentCard}</div>
-      <h2 style={{ textAlign: "center", mt: [3] }}>{title}</h2>
+    <div>
+      <div>{componentCard}</div>
+      <h2>{title}</h2>
       <p>{description}</p>
     </div>
   );
@@ -116,13 +116,22 @@ const CardDeck = () => {
         };
       });
       if (!down && gone.size === stackcards.length)
-        setTimeout(() => gone.clear() || set((i) => i), 600);
+        setTimeout(() => gone.clear() || set((i) => to(i)), 600);
     }
   );
   // Now we're just mapping the animated values to our view, that's it. Btw, this component only renders once. :-)
   const index = stackcards.length - 1;
   return props.map(({ x, y, rot, scale }, i) => (
-    <animated.div key={i} style={{ x, y }} id="deckroot1">
+    <animated.div
+      key={i}
+      style={{
+        transform: interpolate(
+          [x, y],
+          (x, y) => `translate3d(${x}px,${y}px,0)`
+        ),
+      }}
+      id="deckroot1"
+    >
       {/* This is the card itself, we're binding our gesture to it (and inject its index so we know which is which) */}
       <animated.div
         {...bind(i)}
