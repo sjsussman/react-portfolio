@@ -1,11 +1,11 @@
 import React from "react";
 import Card from "./Project Card/Card.js";
 import "../styles/project.css";
-import AbsoluteWrapper from "./AbsoluteWrapper";
+import { motion } from "framer-motion";
 
 const Projects = () => {
   return (
-    <AbsoluteWrapper>
+    <motion.div exit={{ opacity: 0 }}>
       <div id="project-banner">
         <h1>Just a piece of advice...</h1>
         <p>Click on a card to learn more about the project</p>
@@ -22,7 +22,7 @@ const Projects = () => {
           Check out the deployed site
         </a>
       </div>
-    </AbsoluteWrapper>
+    </motion.div>
   );
 };
 

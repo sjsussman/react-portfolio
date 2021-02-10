@@ -1,10 +1,10 @@
 import React from "react";
 import "../styles/contact.css";
-import AbsoluteWrapper from "./AbsoluteWrapper";
+import { motion } from "framer-motion";
 
 const Contact = () => {
   return (
-    <AbsoluteWrapper>
+    <motion.div exit={{ opacity: 0 }}>
       <nav className="social">
         <a
           href="http://github.com/sjsussman"
@@ -35,7 +35,7 @@ const Contact = () => {
           <i class="fas fa-at"></i>
         </a>
       </nav>
-    </AbsoluteWrapper>
+    </motion.div>
   );
 };
 

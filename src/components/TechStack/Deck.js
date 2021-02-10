@@ -1,6 +1,5 @@
-import { render } from "react-dom";
 import React, { useState } from "react";
-import { useSprings, animated, interpolate } from "react-spring";
+import { useSprings, animated, to as interpolate } from "react-spring";
 import { useDrag } from "react-use-gesture";
 import "./Deck.css";
 
@@ -117,7 +116,7 @@ const CardDeck = () => {
         };
       });
       if (!down && gone.size === stackcards.length)
-        setTimeout(() => gone.clear() || set((i) => to(i)), 600);
+        setTimeout(() => gone.clear() || set((i) => i), 600);
     }
   );
   // Now we're just mapping the animated values to our view, that's it. Btw, this component only renders once. :-)
@@ -136,7 +135,7 @@ const CardDeck = () => {
   ));
 };
 
-const ExportedDeck = () => {
+const exportedDeck = () => {
   return (
     <div id="deckroot3">
       <div id="deckroot4">
@@ -146,4 +145,4 @@ const ExportedDeck = () => {
   );
 };
 
-export default ExportedDeck;
+export default exportedDeck;
