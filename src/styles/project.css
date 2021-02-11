@@ -1,12 +1,15 @@
 #project-banner h1 {
-  font-size: 4rem;
-  margin-left: 5%;
+  font-size: 5rem;
+  margin-left: 15%;
+  color: #fff;
+  margin-bottom: 0;
 }
 
-#project-banner p {
+/* #project-banner p {
   font-size: 1.7rem;
   margin-left: 20%;
-}
+  color: #fff;
+} */
 
 #link-container {
   text-align: center;

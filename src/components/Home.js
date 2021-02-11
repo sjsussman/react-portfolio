@@ -8,7 +8,9 @@ const Home = () => {
   return (
     <motion.div exit={{ opacity: 0 }}>
       <div id="home-container">
-        <h1 id="home-header">Hello, my name is Steven</h1>
+        <h1 id="home-header">
+          Hello, my name is <span style={{ color: "crimson" }}>Steven</span>
+        </h1>
         <p>
           I am a full stack web developer with an enthusiasm for UX/UI design.
         </p>

@@ -5,7 +5,7 @@ import NavLinks from "./NavLinks";
 const Navigation = styled.nav`
   height: 10vh;
   display: flex;
-  background-color: #fff;
+  background-color: black; //#fff
   position: relative;
   justify-content: flex-end; // space between
   text-transform: uppercase;

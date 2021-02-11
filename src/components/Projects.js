@@ -7,20 +7,24 @@ const Projects = () => {
   return (
     <motion.div exit={{ opacity: 0 }}>
       <div id="project-banner">
-        <h1>Just a piece of advice...</h1>
-        <p>Click on a card to learn more about the project</p>
+        <h1>PROJECTS</h1>
+        {/* <p>Thanks for sticking around! Check out some of my work below.</p> */}
       </div>
       <div id="cardWrapper">
         <Card />
       </div>
       <div id="link-container">
-        <a
-          href="https://my-dev-chat.vercel.app/"
-          target="_blank"
-          id="devAppLink"
-        >
-          Check out the deployed site
-        </a>
+        <p style={{ color: "#fff" }}>
+          See{" "}
+          <a
+            href="https://my-dev-chat.vercel.app/"
+            target="_blank"
+            id="devAppLink"
+          >
+            me
+          </a>{" "}
+          live!
+        </p>
       </div>
     </motion.div>
   );

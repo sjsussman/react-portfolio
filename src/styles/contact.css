@@ -1,12 +1,69 @@
 .social {
   display: flex;
-  height: 90vh;
+  height: 40vh;
   flex-direction: row;
   justify-content: space-evenly;
-  align-items: center;
+  margin-top: 5%;
+  color: white;
 }
 
 .fa-github {
   font-size: 10rem;
   color: black;
+  color: white;
+}
+
+.fa-github:hover,
+.fa-twitter:hover,
+.fa-at:hover,
+.fa-linkedin-in:hover {
+  color: crimson;
+}
+
+.fa-github,
+.fa-linkedin-in,
+.fa-twitter,
+.fa-at::before,
+::after {
+  transition: all 0.4s ease-in;
+}
+
+.fa-linkedin-in {
+  font-size: 10rem;
+  color: black;
+  color: white;
+}
+
+.fa-github:hover {
+  color: crimson;
+}
+
+.fa-github::before,
+::after {
+  transition: all 0.4s ease-in;
+}
+
+.fa-twitter {
+  font-size: 10rem;
+  color: black;
+  color: white;
+}
+
+.fa-at {
+  font-size: 10rem;
+  color: black;
+  color: white;
+}
+
+#contact-banner {
+  font-size: 8rem;
+  width: 100%;
+  margin: 0 0 0 5%;
+  color: white;
+}
+
+#me-banner {
+  font-size: 6rem;
+  margin: 0 0 0 30%;
+  color: white;
 }

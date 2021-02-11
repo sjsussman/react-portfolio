@@ -14,11 +14,11 @@ import {
 
 const stackcards = [
   {
-    key: 1,
-    componentCard: <ReactJs color="#61DAFB" size={48} />,
-    title: "React",
+    key: 6,
+    componentCard: <Amazonaws size={48} />,
+    title: "Amazon AWS",
     description:
-      "React (also known as React.js or ReactJS) is a JavaScript library for building user interfaces. It is maintained by Facebook and a community of individual developers and companies.",
+      "Amazonaws (or Amazon Web Services) is a online cloud storage web service presented by Amazon, Inc. It provides computing power, database storage, applications and other IT resources.",
   },
   {
     key: 2,
@@ -35,6 +35,13 @@ const stackcards = [
       "Node.js is an open-source, cross-platform, JavaScript runtime environment that executes JavaScript code outside of a browser. ",
   },
   {
+    key: 5,
+    componentCard: <ReactJs color="#61DAFB" size={48} />,
+    title: "React",
+    description:
+      "React (also known as React.js or ReactJS) is a JavaScript library for building user interfaces. It is maintained by Facebook and a community of individual developers and companies.",
+  },
+  {
     key: 4,
     componentCard: <Javascript color="#F7DF1E" size={48} />,
     title: "JavaScript",
@@ -42,18 +49,11 @@ const stackcards = [
       "JavaScript often abbreviated as JS, is a high-level, just-in-time compiled, multi-paradigm programming language that conforms to the ECMAScript specification.",
   },
   {
-    key: 5,
+    key: 1,
     componentCard: <Html5 color="#E34F26" size={48} />,
     title: "HTML5",
     description:
       "HTML5 is a software solution stack that defines the properties and behaviors of web page content by implementing a markup based pattern to it.",
-  },
-  {
-    key: 6,
-    componentCard: <Amazonaws size={48} />,
-    title: "Amazon AWS",
-    description:
-      "Amazonaws (or Amazon Web Services) is a online cloud storage web service presented by Amazon, Inc. It provides computing power, database storage, applications and other IT resources.",
   },
 ];
 
@@ -61,9 +61,11 @@ const Card = ({ stackcard }) => {
   const { title, description, componentCard } = stackcard;
   return (
     <div>
-      <div style={{ textAlign: "center" }}>{componentCard}</div>
+      <div style={{ textAlign: "center", padding: "5px" }}>{componentCard}</div>
       <h2 style={{ margin: "0", textAlign: "center" }}>{title}</h2>
-      <p style={{ margin: "0", textAlign: "center" }}>{description}</p>
+      <p style={{ margin: "0", textAlign: "center", padding: "10px" }}>
+        {description}
+      </p>
     </div>
   );
 };
