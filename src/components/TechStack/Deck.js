@@ -61,9 +61,9 @@ const Card = ({ stackcard }) => {
   const { title, description, componentCard } = stackcard;
   return (
     <div>
-      <div>{componentCard}</div>
-      <h2>{title}</h2>
-      <p>{description}</p>
+      <div style={{ textAlign: "center" }}>{componentCard}</div>
+      <h2 style={{ margin: "0", textAlign: "center" }}>{title}</h2>
+      <p style={{ margin: "0", textAlign: "center" }}>{description}</p>
     </div>
   );
 };

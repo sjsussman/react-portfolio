@@ -34,9 +34,7 @@ const Home = () => {
         </p>
         <p id="tech-stack">My Tech Stack</p>
       </div>
-      <div>
-        <ExportedDeck />
-      </div>
+      <ExportedDeck />
     </motion.div>
   );
 };

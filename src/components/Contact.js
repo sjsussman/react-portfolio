@@ -6,11 +6,7 @@ const Contact = () => {
   return (
     <motion.div exit={{ opacity: 0 }}>
       <nav className="social">
-        <a
-          href="http://github.com/sjsussman"
-          target="_blank"
-          style={{ fontSize: "10rem", color: "black" }}
-        >
+        <a href="http://github.com/sjsussman" target="_blank">
           <i class="fab fa-github"></i>
         </a>
         <a
