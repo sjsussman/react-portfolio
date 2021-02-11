@@ -61,11 +61,9 @@ const Card = ({ stackcard }) => {
   const { title, description, componentCard } = stackcard;
   return (
     <div>
-      <div style={{ textAlign: "center", padding: "5px" }}>{componentCard}</div>
-      <h2 style={{ margin: "0", textAlign: "center" }}>{title}</h2>
-      <p style={{ margin: "0", textAlign: "center", padding: "10px" }}>
-        {description}
-      </p>
+      <div id="card-photo">{componentCard}</div>
+      <h2 id="card-title">{title}</h2>
+      <p id="card-description">{description}</p>
     </div>
   );
 };

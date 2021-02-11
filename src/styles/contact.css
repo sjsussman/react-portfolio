@@ -67,3 +67,27 @@
   margin: 0 0 0 30%;
   color: white;
 }
+
+@media (max-width: 650px) {
+  .social {
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 50%;
+  }
+  #contact-banner {
+    font-size: 5rem;
+    text-align: center;
+    margin: 0;
+  }
+
+  #me-banner {
+    font-size: 3rem;
+    text-align: center;
+    margin: 0;
+  }
+
+  /* .fa-github .fa-twitter .fa-at .fa-linkedin-in {
+    margin: 5%;
+  } */
+}
