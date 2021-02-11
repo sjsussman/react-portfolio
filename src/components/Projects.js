@@ -2,6 +2,7 @@ import React from "react";
 import Card from "./Project Card/Card.js";
 import "../styles/project.css";
 import { motion } from "framer-motion";
+import Navbar from "./NavBar/Navbar";
 
 const Projects = () => {
   return (

@@ -5,8 +5,6 @@ import { motion } from "framer-motion";
 const Contact = () => {
   return (
     <motion.div exit={{ opacity: 0 }}>
-      <h1 id="contact-banner">CONTACT</h1>
-      <h1 id="me-banner">ME</h1>
       <nav className="social">
         <a href="http://github.com/sjsussman" target="_blank">
           <i class="fab fa-github"></i>

@@ -23,27 +23,29 @@
 }
 
 #cardWrapper {
-  height: 65vh;
+  height: 50vh;
+  margin: 0;
 }
 
 @media (max-width: 800px) {
-  #project-banner p {
-    margin-right: 20%;
+  #project-banner h1 {
     text-align: center;
+    margin: 0;
   }
 
   #cardWrapper {
-    height: 55vh;
+    height: 70vh;
   }
 }
 
 @media (max-width: 500px) {
-  #project-banner p {
-    margin-right: 20%;
+  #project-banner h1 {
+    margin: 0%;
     text-align: center;
+    font-size: 4rem;
   }
 
   #cardWrapper {
-    height: 45vh;
+    height: 65vh;
   }
 }

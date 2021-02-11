@@ -9,8 +9,8 @@
   position: absolute;
   max-width: 70%;
   max-height: 60vh;
-  width: 200ch;
-  height: 60vh;
+  width: 50%;
+  height: 50vh;
   cursor: pointer;
   will-change: transform, opacity;
   border: 1px solid black;
@@ -19,7 +19,9 @@
 .front,
 .back {
   background-size: 100%;
-  /* background-position: center; */
+  background-repeat: no-repeat;
+  display: inline-block;
+  margin: auto;
 }
 
 .back {
@@ -34,6 +36,7 @@
   .c {
     width: 59ch;
     height: 50vh;
+    margin-top: 25%;
   }
   .front,
   .back {
@@ -46,5 +49,6 @@
   .c {
     width: 40ch;
     height: 40vh;
+    margin-top: 45%;
   }
 }
