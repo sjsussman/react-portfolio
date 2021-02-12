@@ -17,53 +17,40 @@ const stackcards = [
     key: 6,
     componentCard: <Amazonaws size={48} />,
     title: "Amazon AWS",
-    description:
-      "Amazonaws (or Amazon Web Services) is a online cloud storage web service presented by Amazon, Inc. It provides computing power, database storage, applications and other IT resources.",
   },
   {
     key: 2,
     componentCard: <Netlify color="#00C7B7" size={48} />,
     title: "Netlify",
-    description:
-      "Netlify is a San Francisco-based cloud computing company that offers hosting and serverless backend services for static websites.",
   },
   {
     key: 3,
     componentCard: <NodeDotJs color="#339933" size={48} />,
     title: "Node.js",
-    description:
-      "Node.js is an open-source, cross-platform, JavaScript runtime environment that executes JavaScript code outside of a browser. ",
   },
   {
     key: 5,
     componentCard: <ReactJs color="#61DAFB" size={48} />,
     title: "React",
-    description:
-      "React (also known as React.js or ReactJS) is a JavaScript library for building user interfaces. It is maintained by Facebook and a community of individual developers and companies.",
   },
   {
     key: 4,
     componentCard: <Javascript color="#F7DF1E" size={48} />,
     title: "JavaScript",
-    description:
-      "JavaScript often abbreviated as JS, is a high-level, just-in-time compiled, multi-paradigm programming language that conforms to the ECMAScript specification.",
   },
   {
     key: 1,
     componentCard: <Html5 color="#E34F26" size={48} />,
     title: "HTML5",
-    description:
-      "HTML5 is a software solution stack that defines the properties and behaviors of web page content by implementing a markup based pattern to it.",
   },
 ];
 
 const Card = ({ stackcard }) => {
-  const { title, description, componentCard } = stackcard;
+  const { title, componentCard } = stackcard;
   return (
     <div>
       <div id="card-photo">{componentCard}</div>
       <h2 id="card-title">{title}</h2>
-      <p id="card-description">{description}</p>
     </div>
   );
 };
